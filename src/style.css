@@ -1,0 +1,17 @@
+:root {
+    --white: #fff;
+    --basic: hsl(0, 2%, 62%);
+    --hover: #333333;
+    --focus: #2962FF;
+    --error: #D32F2F;
+    --disabled-border: #E0E0E0;
+    --disabled-bg: #F2F2F2;
+
+
+
+}
+
+.container {
+    width: 90%;
+    min-width: 310px;
+}
