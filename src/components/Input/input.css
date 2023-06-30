@@ -1,0 +1,108 @@
+.input-container {
+  min-width: 50px;
+  max-width: 200px;
+  min-height: 50px;
+  border: none;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+  padding: 1.9rem;
+}
+
+.input-container-fullWidth {
+  max-width: 100%;
+}
+
+h2 {
+  padding-left: 3rem;
+  font-size: 1rem;
+}
+
+.start-icon {
+  position: absolute;
+  left: 40px;
+
+  color: #828282;
+  font-variation-settings: "FILL" 1;
+}
+
+.end-icon {
+  position: absolute;
+  right: 35px;
+  top: 40px;
+  font-variation-settings: "FILL" 1;
+  color: #828282;
+}
+
+.helper-text {
+  position: absolute;
+  bottom: -13px;
+}
+
+label {
+  position: absolute;
+  top: 0;
+}
+
+input {
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input::placeholder {
+  font-weight: bold;
+  color: var(--basic);
+}
+
+.input-standard {
+  border: 2px solid var(--basic);
+}
+.input-invalid {
+  border: 2px solid var(--error);
+}
+
+/*Inputs Standard*/
+
+.input-standard:hover:not(.input-invalid) {
+  border: 2px solid var(--hover);
+}
+.input-standard:hover:not(.input-invalid) ~ .helper-text {
+  color: var(--hover);
+}
+.input-standard:focus:not(.input-invalid) {
+  border: 2px solid var(--focus);
+}
+
+.input-standard:focus:not(.input-invalid) + label {
+  color: var(--focus);
+}
+
+/*Inputs Error*/
+
+.input-invalid + label,
+.label-invalid + p {
+  color: var(--error);
+}
+
+/*Disabled*/
+input:disabled {
+  background-color: #f2f2f2;
+  border: 2px solid #e0e0e0 !important;
+}
+
+/*sizes*/
+
+.input-size-sm {
+  padding: 14px;
+}
+
+.input-size-md {
+  padding: 18px;
+}
